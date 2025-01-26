@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6796866b3a84273260750ec7/1iihvq5qd';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Древо Жизни</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Top menu styles */
+    .top-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo styles */
+    .top-menu img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    /* Text styles */
+    .top-menu .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: gold;
+      white-space: nowrap;
+    }
+
+    /* Second menu styles */
+    .second-menu {
+      display: flex;
+      justify-content: flex-end;
+      background-color: gold;
+      padding: 10px 20px;
+    }
+
+    /* Button styles */
+    .second-menu button {
+      background-color: white;
+      border: none;
+      color: gold;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .second-menu button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Centered text styles */
+    .center-text {
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Golden container styles */
+    .info-container {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: gold;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold; /* Bold text */
+      line-height: 1.6;
+      text-align: left; /* Right-aligned text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Red container for reporting threats */
+    .report-container {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: red;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px; /* Smaller text */
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Yellow container for bullying prevention */
+    .bullying-container {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: yellow;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+      font-size: 14px; /* Even smaller text */
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Orange container for contact button */
+    .contact-btn-container {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: orange;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Floating contact button */
+    .contact-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Email link styles */
+    .contact-email {
+      font-size: 18px;
+      margin-top: 10px;
+      display: block;
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .contact-email:hover {
+      text-decoration: underline;
+    }
+
+    /* Button for submitting complaint */
+    .submit-complaint-btn {
+      background-color: white;
+      border: none;
+      color: red;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .submit-complaint-btn:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Top menu -->
+  <div class="top-menu">
+    <div style="display: flex; align-items: center;">
+      <img src="img/logo.png" alt="Logo">
+      <div class="title">Древо Жизни</div>
+    </div>
+  </div>
+
+  <!-- Second menu -->
+  <div class="second-menu">
+    <button>ENG</button>
+    <button>РУС</button>
+  </div>
+
+  <!-- Centered text -->
+  <div class="center-text">
+    Психологическая группа против насилия над детьми и взрослыми.
+  </div>
+
+  <!-- Red container for reporting threats -->
+  <div class="report-container">
+    Сообщите об угрозе или нарушении закона. <br>
+    Ваше сообщение будет обработано конфиденциально.
+    <button class="submit-complaint-btn">Отправить жалобу</button>
+  </div>
+
+  <!-- Yellow container for bullying prevention -->
+  <div class="bullying-container">
+    Как не стать жертвой интернет-булинга? Мы предоставляем советы и поддержку для предотвращения насилия в сети.
+    <button class="submit-complaint-btn">Полезная информация</button>
+  </div>
+
+  <!-- Orange container for contact button -->
+  <div class="contact-btn-container">
+    Связь с нами онлайн через поддержку. <br>
+    Напишите нам на почту или воспользуйтесь чатом с оператором.
+  </div>
+
+  <!-- Floating contact button -->
+  <button class="contact-btn" onclick="window.location.href='mailto:support@treeoflife.com'">
+    Связь с оператором
+  </button>
+
+  <a href="mailto:support@treeoflife.com" class="contact-email">Или напишите нам на электронную почту</a>
+</body>
+</html>
