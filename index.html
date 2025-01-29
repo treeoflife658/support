@@ -21,12 +21,29 @@
             margin: 0;
             font-size: 2.5em;
         }
-        .container {
+        .lang-selection {
+            margin-top: 10px;
+        }
+        .lang-btn {
+            background-color: #2c5e2c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .lang-btn:hover {
+            background-color: #3b7a3b;
+        }
+        main {
             width: 80%;
             margin: auto;
             padding: 20px;
         }
-        .section {
+        section {
             background-color: #2c5e2c;
             padding: 20px;
             margin: 20px 0;
@@ -39,6 +56,7 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            transition: background 0.3s;
         }
         .btn:hover {
             background-color: #d35400;
@@ -53,38 +71,70 @@
 </head>
 <body>
 
-    <header>
-        <h1>Tree of Life</h1>
-        <p>Your safe space for emotional well-being</p>
-    </header>
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/679a8cac3a8427326076f3ef/1iiprb14d';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
 
-    <div class="container">
-        <section class="section">
-            <h2>Welcome to Tree of Life</h2>
-            <p>We are here to support you in difficult times. Whether you're struggling with stress, anxiety, or personal challenges, you're not alone. Our goal is to provide a safe and comforting environment where you can find guidance, peace, and hope.</p>
-        </section>
-
-        <section class="section">
-            <h2>How We Can Help</h2>
-            <ul>
-                <li>Confidential online counseling</li>
-                <li>Supportive community forums</li>
-                <li>Guided meditation & relaxation exercises</li>
-                <li>Emergency crisis resources</li>
-            </ul>
-            <a href="#" class="btn">Get Support</a>
-        </section>
-
-        <section class="section">
-            <h2>Contact Us</h2>
-            <p>Email: support@treeoflife.com</p>
-            <p>Phone: +123 456 7890</p>
-        </section>
+<header>
+    <h1>Tree of Life</h1>
+    <p>Your safe space for emotional well-being</p>
+    <div class="lang-selection">
+        <button class="lang-btn">ENG</button>
+        <button class="lang-btn">RUS</button>
+        <button class="lang-btn">LAT</button>
     </div>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Tree of Life. All rights reserved.</p>
-    </footer>
+<main>
+    <section>
+        <h2>Welcome to Tree of Life</h2>
+        <p>We are here to support you in difficult times. Whether you're struggling with stress, anxiety, or personal challenges, you're not alone. Our goal is to provide a safe and comforting environment where you can find guidance, peace, and hope.</p>
+    </section>
+
+    <section>
+        <h2>How We Can Help</h2>
+        <ul>
+            <li>Confidential online counseling</li>
+            <li>Supportive community forums</li>
+            <li>Guided meditation & relaxation exercises</li>
+            <li>Emergency crisis resources</li>
+        </ul>
+        <a href="#" class="btn">Get Support</a>
+    </section>
+
+    <section>
+        <h2>Online Safety & Bullying Prevention</h2>
+        <p>Ensuring your safety online is crucial, especially when seeking emotional support. Here are some key tips to stay safe and avoid cyberbullying:</p>
+        <ul>
+            <li>Never share personal information (real name, address, phone number) with strangers online.</li>
+            <li>Use strong passwords and enable two-factor authentication on your accounts.</li>
+            <li>Be cautious when talking to new people online—verify their identities before trusting them.</li>
+            <li>Report and block any users who harass or bully you on social media or support platforms.</li>
+            <li>If you experience online bullying, reach out to a trusted friend, family member, or counselor.</li>
+            <li>If your life is in danger, call or text 112 or 911 immediately.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:support@treeoflife.com" style="color: #fff;">support@treeoflife.com</a></p>
+        <p>Phone: <a href="tel:+1234567890" style="color: #fff;">+123 456 7890</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Tree of Life. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
