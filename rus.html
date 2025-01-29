@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6796866b3a84273260750ec7/1iihvq5qd';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -57,11 +44,11 @@ s0.parentNode.insertBefore(s1,s0);
       padding: 10px 20px;
     }
 
-    /* Button styles */
+    /* Button styles in the second menu */
     .second-menu button {
       background-color: white;
       border: none;
-      color: gold;
+      color: black;
       font-size: 16px;
       font-weight: bold;
       padding: 8px 15px;
@@ -83,21 +70,6 @@ s0.parentNode.insertBefore(s1,s0);
       color: black;
     }
 
-    /* Golden container styles */
-    .info-container {
-      margin: 20px auto;
-      max-width: 800px;
-      background-color: gold;
-      padding: 20px;
-      border-radius: 10px;
-      color: white;
-      font-size: 18px;
-      font-weight: bold; /* Bold text */
-      line-height: 1.6;
-      text-align: left; /* Right-aligned text */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
     /* Red container for reporting threats */
     .report-container {
       margin: 20px auto;
@@ -106,7 +78,7 @@ s0.parentNode.insertBefore(s1,s0);
       padding: 20px;
       border-radius: 10px;
       color: white;
-      font-size: 16px; /* Smaller text */
+      font-size: 16px;
       font-weight: bold;
       line-height: 1.6;
       text-align: left;
@@ -121,26 +93,43 @@ s0.parentNode.insertBefore(s1,s0);
       padding: 20px;
       border-radius: 10px;
       color: black;
-      font-size: 14px; /* Even smaller text */
+      font-size: 14px;
       font-weight: bold;
       line-height: 1.6;
       text-align: left;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Orange container for contact button */
-    .contact-btn-container {
+    /* Final call-to-action container */
+    .help-container {
       margin: 20px auto;
       max-width: 800px;
-      background-color: orange;
+      background-color: #4CAF50; /* Привлекающий зеленый цвет */
       padding: 20px;
       border-radius: 10px;
       color: white;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       line-height: 1.6;
-      text-align: left;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Buttons in containers */
+    .submit-complaint-btn {
+      background-color: white;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-complaint-btn:hover {
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     /* Floating contact button */
@@ -162,38 +151,6 @@ s0.parentNode.insertBefore(s1,s0);
     .contact-btn:hover {
       background-color: #45a049;
     }
-
-    /* Email link styles */
-    .contact-email {
-      font-size: 18px;
-      margin-top: 10px;
-      display: block;
-      color: #4CAF50;
-      text-decoration: none;
-    }
-
-    .contact-email:hover {
-      text-decoration: underline;
-    }
-
-    /* Button for submitting complaint */
-    .submit-complaint-btn {
-      background-color: white;
-      border: none;
-      color: red;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: 0.3s;
-      margin-top: 15px;
-    }
-
-    .submit-complaint-btn:hover {
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-
   </style>
 </head>
 <body>
@@ -229,17 +186,13 @@ s0.parentNode.insertBefore(s1,s0);
     <button class="submit-complaint-btn">Полезная информация</button>
   </div>
 
-  <!-- Orange container for contact button -->
-  <div class="contact-btn-container">
-    Связь с нами онлайн через поддержку. <br>
-    Напишите нам на почту или воспользуйтесь чатом с оператором.
+  <!-- Final call-to-action container -->
+  <div class="help-container">
+    Если вы столкнулись с насилием, не молчите! Напишите нам: <br>
+    <a href="mailto:example@example.com" style="color: white; text-decoration: underline;">example@example.com</a>
   </div>
 
   <!-- Floating contact button -->
-  <button class="contact-btn" onclick="window.location.href='mailto:support@treeoflife.com'">
-    Связь с оператором
-  </button>
-
-  <a href="mailto:support@treeoflife.com" class="contact-email">Или напишите нам на электронную почту</a>
+  <button class="contact-btn">Связаться</button>
 </body>
 </html>
