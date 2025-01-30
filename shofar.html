@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шофар - Мессианская Еврейская Община</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/img/background.jpg') repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8); /* Белый слой с прозрачностью */
+            z-index: -1;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00509e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Мессианская Еврейская Община "Шофар"</h1>
+    </header>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#faith">Верования</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>О нас</h2>
+        <p>Община "Шофар" – это место, где евреи и верующие из народов соединяются в поклонении Единому Богу Израиля – Яхве, принимая Йешуа (Иисуса) как Мессию.</p>
+        <p>Мы следуем Торе, празднуем Господние праздники, храним Шаббат и стремимся жить по заповедям Всевышнего.</p>
+    </div>
+
+    <div class="container" id="faith">
+        <h2>Наши верования</h2>
+        <ul>
+            <li>Мы верим в Единого Бога – Авраhама, Ицхака и Яакова.</li>
+            <li>Мы признаем Йешуа (Иисуса) как обещанного Мессию Израиля.</li>
+            <li>Мы следуем Божьим заповедям и соблюдаем Тору.</li>
+            <li>Мы чтим Шаббат, праздники и традиции еврейского народа.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Контакты</h2>
+        <p>Email: shofar@community.org</p>
+        <p>Телефон: +371 123 456 78</p>
+        <p>Адрес: Рига, Латвия</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Община "Шофар". Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
